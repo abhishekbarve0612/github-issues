@@ -12,35 +12,35 @@ const Pagination = () => {
         <ul class="pagination">
           {prev > 0 && (
             <li class="page-item">
-              <a class="page-link" href={`/${prev}`}>
+              <a class="page-link" href={`/github-issues/${prev}`}>
                 Previous
               </a>
             </li>
           )}
           {page + 1 < 110 && (
             <li class="page-item">
-              <a class="page-link" href={`/${page + 1}`}>
+              <a class="page-link" href={`/github-issues/${page + 1}`}>
                 {page + 1}
               </a>
             </li>
           )}
           {page + 2 < 110 && (
             <li class="page-item">
-              <a class="page-link" href={`/${page + 2}`}>
+              <a class="page-link" href={`/github-issues/${page + 2}`}>
                 {page + 2}
               </a>
             </li>
           )}
           {page + 3 < 110 && (
             <li class="page-item">
-              <a class="page-link" href={`/${page + 3}`}>
+              <a class="page-link" href={`/github-issues/${page + 3}`}>
                 {page + 3}
               </a>
             </li>
           )}
           {next < 110 && (
             <li class="page-item">
-              <a class="page-link" href={`/${next}`}>
+              <a class="page-link" href={`/github-issues/${next}`}>
                 Next
               </a>
             </li>

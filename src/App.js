@@ -8,10 +8,10 @@ function App() {
     <div className="App">
       <Router>
         <header className="App-header">
-          <Link to="/">GIT HUB Issues</Link>
+          <Link to="/github-issues/">GIT HUB Issues</Link>
         </header>
         <Switch>
-          <Route exact path="/:page?">
+          <Route exact path="/github-issues/:page?">
             <Issues />
           </Route>
         </Switch>
