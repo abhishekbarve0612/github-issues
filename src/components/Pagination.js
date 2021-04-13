@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 const Pagination = () => {
   const params = useParams();
   let page = parseInt(params.page);
+  if (params.page == null) page = parseInt(1);
   let prev = page - 1;
   let next = page + 1; //LIMIT 1084
   return (
